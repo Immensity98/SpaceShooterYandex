@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -8029212983472403669}
   - component: {fileID: 3883478841663454528}
   - component: {fileID: -8388870872149088124}
-  - component: {fileID: 5090791945491405309}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Player
@@ -102,7 +101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyBulletsConfig: {fileID: 11400000, guid: d8c5590ea5882a849878f66fc01a6381, type: 2}
-  _animator: {fileID: 5090791945491405309}
 --- !u!114 &-8029212983472403669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,24 +185,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &5090791945491405309
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8268920771286870077}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d018582dfd2c8486089c2af452aec4b3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
