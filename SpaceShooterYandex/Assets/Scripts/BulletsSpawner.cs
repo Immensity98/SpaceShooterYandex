@@ -11,7 +11,7 @@ public class BulletsSpawner : Spawner
 
         if (player.AmmoValue > 0 && _objectPool.HasFreeElement(out GameObject element))
         {
-            Debug.Log("оскъ дспю");
+//            Debug.Log("оскъ дспю");
             element.SetActive(true);
 
             _shotSound.Play();
