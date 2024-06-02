@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MusicPlay : MonoBehaviour
-{
+public class MusicPlay : MonoBehaviour {
     public AudioSource AudioSource;
-    private void Start()
-    {
+    private void Start () {
         AudioSource.Play();
     }
 }
