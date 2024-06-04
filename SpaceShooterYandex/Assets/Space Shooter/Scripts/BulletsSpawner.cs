@@ -16,7 +16,7 @@ public class BulletsSpawner : Spawner
             player.AmmoValue -= 1;
             AmmoView.text = player.AmmoValue.ToString();
         } else {
-            Debug.Log("ObjectNet");
+//            Debug.Log("ObjectNet");
         }
     }
 }

@@ -24,7 +24,7 @@ public class BonusesSpawn : MonoBehaviour
 
     IEnumerator SpawnCoroutine()
     {
-        Debug.Log("Corotina");
+//        Debug.Log("Corotina");
         while (true)
         {
             SetSpawnPosition();

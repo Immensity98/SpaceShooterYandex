@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour {
     public AudioSource DeathSound;
 
     private void Start () {
-        Debug.Log(Health);
+//        Debug.Log(Health);
     }
 
     public void TakeDamage (int damage) {

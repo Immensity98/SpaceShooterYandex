@@ -219,6 +219,27 @@
       },
       "url": "https://packages.unity.com"
     },
+    "space.kulibin.audiodepot": {
+      "version": "https://github.com/akareactor/AudioDepot.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "30f4753dd2e7e4006b807be586992b01a327102e"
+    },
+    "space.kulibin.messagebus": {
+      "version": "https://github.com/akareactor/MessageBus.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "0221d1a503c4dc863bb19936f47b8b08da419770"
+    },
+    "space.kulibin.timersystem": {
+      "version": "https://github.com/akareactor/TimerSystem.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "f684aff9fa093cf34ab437f0dadf6936edd422df"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

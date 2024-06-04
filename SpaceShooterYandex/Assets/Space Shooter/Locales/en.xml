@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Root>
+	<start>START</start>
+	<score>Score: {0}</score>
+	<highscore>Highscore: {0}</highscore>
+	<restart>RESTART</restart>
+	<up>UP</up>
+	<down>DOWN</down>
+</Root>

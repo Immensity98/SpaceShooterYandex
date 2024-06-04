@@ -1,20 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class RestartGame : MonoBehaviour
-{
-    public Button RestartButton;
+public class RestartGame : MonoBehaviour {
 
-
-
-    private void Start()
-    {
-        RestartButton.onClick.AddListener(Restart); 
-    }
-    public void Restart()
-    {
-        Debug.Log("RESTART");
+    // сигнал от слушателя кнопки РЕСТАРТ
+    public void RestartGameAction () {
         SceneManager.LoadScene("Main");
-    }    
+    }
+
+
 }

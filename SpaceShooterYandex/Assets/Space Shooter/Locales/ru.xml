@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Root>
+	<start>СТАРТ</start>
+	<score>Счёт: {0}</score>
+	<highscore>Рекорд: {0}</highscore>
+	<restart>ЗАНОВО</restart>
+	<up>ВВЕРХ</up>
+	<down>ВНИЗ</down>
+</Root>
+
+
+
+
+
+
