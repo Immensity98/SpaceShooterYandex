@@ -66,7 +66,7 @@ public class Player : MonoBehaviour {
         //BestResult.text = "Best Result: " + PlayerPrefs.GetInt("Best").ToString();
         BestResult.text = string.Format(LanguageManager.Get("highscore"), GamePrefs.best);
         ResultScore.enabled = true;
-        Buttons.SetActive(true);
+        //Buttons.SetActive(true); // теперь включение кнопки РЕСТАРТ через объект Реклама YG
         ScoreView.enabled = false;
         Game.SetActive(false);
         gameObject.SetActive(false);
