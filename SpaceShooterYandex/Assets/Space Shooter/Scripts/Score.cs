@@ -6,11 +6,15 @@ using YG;
 public class Score : MonoBehaviour {
     public int ScoreValue;
     public TextMeshProUGUI ScoreView;
+    public TextMeshProUGUI highScoreView;
     //public static int BestResult; // в пользу GamePrefs.best
+    string scoreLocale;
 
     private void Start () {
         ScoreValue = 0;
         //GetBestResult(); // это уже не нужно, т.к. в GameManager загрузится весь блок данных GamePrefs
+        scoreLocale = LanguageManager.Get("score");
+        AddScore(0);
     }
 
     public static int GetBestResult () {
@@ -20,9 +24,14 @@ public class Score : MonoBehaviour {
     return GamePrefs.best;
     }
 
+    public void UpdateHighscore () {
+        highScoreView.text = string.Format(LanguageManager.Get("highscore"), GamePrefs.best);
+    }
+
     public void AddScore (int score) {
         ScoreValue += score;
-        ScoreView.text = ScoreValue.ToString();
+        ScoreView.text = string.Format(scoreLocale, ScoreValue); // оптимизация
+        //ScoreView.text = ScoreValue.ToString();
     }
 
     // Единственное место, где определяется рекорд и происходит его сохранение - после гибели игрока.
@@ -32,6 +41,7 @@ public class Score : MonoBehaviour {
         //    BestResult = value;
         //    PlayerPrefs.SetInt("Best", BestResult); // это уже не нужно
         //}
+        //print("CheckBestResult " + value + ", GamePrefs.best = " + GamePrefs.best);
         if (value > GamePrefs.best) {
             // локальное сохранение
             GamePrefs.best = value;
@@ -39,7 +49,7 @@ public class Score : MonoBehaviour {
             // облачное сохранение
             GameManager.savedGame.highscore = value;
             YandexGame.SaveProgress();
-            // обновление лидерборда втёмную
+            // обновление лидерборда "втёмную"
             // Конечно, надо сначала прочитать свой рекорд из лидерборда, и записывать обратно только если он превышен.
             // Но у нас уже есть облачное сохранение, поэтому используем только его
             YandexGame.NewLeaderboardScores("highscores", value);

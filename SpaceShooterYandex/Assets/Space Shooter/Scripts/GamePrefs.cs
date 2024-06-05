@@ -1,5 +1,7 @@
 #define social
 
+using UnityEngine;
+
 // просто чтобы легче было контролировать вызовы обёртки
 // Сама же обёртка нужна для того, чтобы сохранение не сбрасывалось после обновления на ЯИ
 // https://roundedbox.ru/#100_and_1_problem_of_unity_in_webgl/troubles_with_saves

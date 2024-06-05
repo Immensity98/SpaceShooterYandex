@@ -226,6 +226,13 @@
       "dependencies": {},
       "hash": "30f4753dd2e7e4006b807be586992b01a327102e"
     },
+    "space.kulibin.fpscounter": {
+      "version": "https://github.com/akareactor/FpsCounterUltraSimplePro.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "5d4e04c1793144699b228dcfae9ed654280b988c"
+    },
     "space.kulibin.messagebus": {
       "version": "https://github.com/akareactor/MessageBus.git",
       "depth": 0,

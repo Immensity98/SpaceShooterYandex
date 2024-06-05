@@ -15,7 +15,8 @@ public class UpButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler {
     private void Update () {
         //        Debug.Log(isMove);
         if (isMove == true) {
-            Player.transform.Translate(0, Player._speed * Time.deltaTime, 0);
+            //Player.transform.Translate(0, Player._speed * Time.deltaTime, 0);
+            Player.PlayerMoveUp();
         }
     }
     public void OnPointerDown (PointerEventData eventData) {

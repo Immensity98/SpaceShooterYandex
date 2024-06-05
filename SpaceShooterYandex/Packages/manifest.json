@@ -1,5 +1,6 @@
 {
   "dependencies": {
+	"space.kulibin.fpscounter": "https://github.com/akareactor/FpsCounterUltraSimplePro.git", 
 	"space.kulibin.timersystem": "https://github.com/akareactor/TimerSystem.git", 
 	"space.kulibin.messagebus": "https://github.com/akareactor/MessageBus.git",
 	"space.kulibin.audiodepot": "https://github.com/akareactor/AudioDepot.git", 

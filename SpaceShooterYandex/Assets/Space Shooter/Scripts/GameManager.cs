@@ -35,8 +35,12 @@ public class GameManager : MonoBehaviour {
     }
 
     private void Start () {
-        // локализация
+        Application.targetFrameRate = 60; // на всякий случай.
+        // локализация тут нужна только в редакторе, для отладки
+        // Загрузка локали по языку платформы в другом месте
+        #if UNITY_EDITOR
         if (debugLanguage != "") languageManager.LoadLanguage(debugLanguage);
+        #endif
         // локальное сохранение
         GamePrefs.LoadSettings(); // один раз на старте игры загружаем все настройки и личный рекорд.
         // облачное сохранение заполняется из локального хранилища, ведь мы ещё не знаем, будет ли что-то в LoadFromYandex
