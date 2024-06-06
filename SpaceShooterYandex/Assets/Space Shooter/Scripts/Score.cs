@@ -9,8 +9,12 @@ public class Score : MonoBehaviour {
     public TextMeshProUGUI highScoreView;
     //public static int BestResult; // в пользу GamePrefs.best
     string scoreLocale;
+    [Header("Устанавливать только для очищающей сборки!")]
+    public bool forceSaveNotBest = false; // сбросить свои рекорды.
+    public GameObject forceSaveBanner;
 
     private void Start () {
+        if (forceSaveNotBest) forceSaveBanner.SetActive(true);
         ScoreValue = 0;
         //GetBestResult(); // это уже не нужно, т.к. в GameManager загрузится весь блок данных GamePrefs
         scoreLocale = LanguageManager.Get("score");
@@ -42,7 +46,7 @@ public class Score : MonoBehaviour {
         //    PlayerPrefs.SetInt("Best", BestResult); // это уже не нужно
         //}
         //print("CheckBestResult " + value + ", GamePrefs.best = " + GamePrefs.best);
-        if (value > GamePrefs.best) {
+        if ((!forceSaveNotBest && value > GamePrefs.best) || forceSaveNotBest) {
             // локальное сохранение
             GamePrefs.best = value;
             GamePrefs.SaveSettings();
